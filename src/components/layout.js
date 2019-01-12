@@ -19,7 +19,7 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <StyledLayout>
-        <Header siteTitle={data.site.siteMetadata.title} />
+        {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
         <div className="inner">{children}</div>
       </StyledLayout>
     )}
@@ -34,8 +34,8 @@ export default Layout
 
 const StyledLayout = styled.div`
   .inner {
-    margin: 0 auto;
+    /* margin: 0 auto;
     max-width: 960px;
-    padding: var(--space);
+    padding: var(--space); */
   }
 `
